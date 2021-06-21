@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to top right, #77c3df 0%, #4f6787 100%);
+}
+
+input {
+    border: none;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background: rgba(221, 234, 251, 1);
+    /* box-shadow: 0 4px 4px 0 rgba(149, 191, 247, .6), 0 6px 20px 0 rgba(221, 234, 251, .6); */
+    outline: none;
+    width: 300px;
+    height: 35px;
+    color: #000;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    background: #77c3df;
+    border-radius: 10px;
+    color: #fff;
+}
+
+input:hover {
+    box-shadow: 0 4px 4px 0 rgba(221, 234, 251, .3), 0 6px 20px 0 rgba(221, 234, 251, .3);
+}
+
+.card {
+    position: relative;
+    width: 500px;
+    min-height: 300px;
+    display: flex;
+    justify-content: row;
+    background: rgba(221, 234, 251, .6);
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.card::before {
+    position: absolute;
+    content: '';
+    width: 530px;
+    min-height: 300px;
+    background-color: rgba(221, 234, 251, .4);
+    border-radius: 30px;
+    bottom: 15px;
+    left: -15px;
+    z-index: -1;
+}
+
+.image {
+    padding: 25px;
+}
+
+.image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.information {
+    padding: 20px 0;
+}
+
+.details {
+    padding: 10px 0;
+}
+
+.user-rate {
+    padding: 10px 0;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.user {
+    padding: 0 15px;
+    border-right: 1px solid rgba(248, 246, 246, .5);
+}
+
+.user:last-child {
+    border: none;
+}
+
+.user .name {
+    line-height: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.follow {
+    margin: 5px;
+    padding: 10px;
+    width: 122px;
+    background: black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.links .follow a {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 7px 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.follow:last-child {
+    background: transparent;
+    border: 1px solid #000;
+}
+
+.follow:last-child a {
+    color: black;
+}
+
+#repos {
+    text-align: justify;
+}
+
+#repos a {
+    box-sizing: border-box;
+    padding: 3px 5px;
+    margin-right: 4px;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    background: #4f6787;
+    line-height: 32px;
+    border-radius: 5px;
+}

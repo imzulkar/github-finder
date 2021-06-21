@@ -49,7 +49,7 @@ input:hover {
     z-index: 1;
 }
 
-.card::before {
+/*.card::before {
     position: absolute;
     content: '';
     width: 530px;
@@ -59,7 +59,7 @@ input:hover {
     bottom: 15px;
     left: -15px;
     z-index: -1;
-}
+}*/
 
 .image {
     padding: 25px;

@@ -49,17 +49,6 @@ input:hover {
     z-index: 1;
 }
 
-/* .card::before {
-    position: absolute;
-    content: '';
-    width: 530px;
-    min-height: 300px;
-    background-color: rgba(221, 234, 251, .4);
-    border-radius: 30px;
-    bottom: 15px;
-    left: -15px;
-    z-index: -1;
-} */
 
 .image {
     padding: 25px;
